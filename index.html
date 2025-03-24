@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>星空生日祝福</title>
+    <style>
+        :root { --scroll-speed: 50s; }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background: #000;
+            touch-action: pan-y;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        .scroll-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+            transform: translate3d(0,0,0);
+        }
+
+        .message-box {
+            min-height: 200vh;
+            padding: 70vh 10% 40vh;
+            color: #fff;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            white-space: pre-line;
+            animation: scroll var(--scroll-speed) linear infinite;
+            transform: translate3d(0,0,0);
+            will-change: transform;
+        }
+
+        .music-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            backdrop-filter: blur(8px);
+            cursor: pointer;
+            z-index: 100;
+            font-size: 1.1rem;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes scroll {
+            0% { transform: translate3d(0, 30vh, 0); }
+            100% { transform: translate3d(0, -100%, 0); }
+        }
+
+        @media (max-width: 768px) {
+            .message-box { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="stars"></div>
+        <div class="message-box">
+            🎂 Happy Birthday! 🎂
+                星辰陈鑫
+            ✨ 在这特别的日子里
+            🌟 愿所有美好如期而至！
+
+            你是这世间
+            最特别的存在
+            如同星辰般闪耀动人
+
+            🎁 新的一岁愿你：
+            平安喜乐  得偿所愿
+            万事胜意  前程似锦
+            ✨ **愿你的清晨**有热腾腾的         
+             期待，夜晚有亮晶晶的梦；  
+             ✨ **愿你的勇敢**永远有铠甲，     
+             温柔永远有归宿；  
+             ✨ **愿你的旅途**鲜花载途          
+              时有人喝彩，风雨骤临时有人撑伞
+             ✨ **愿你的春天**有樱花落           
+              满肩头，秋天有月光浸透窗棂，       
+              而四季轮回里总有一个人在           
+               你身后，接住你所有凋零与                      
+               盛放。  
+             ✨ **愿你的孤独**像流星稍纵          
+              即逝，热闹如星群永恒闪耀，          
+               若你偶尔回望人间灯火——我                       
+               永远是最亮的那盏归途。  
+             ✨ **愿你的眼泪**化作海底          
+             珍珠，笑声酿成山间清泉，而                     
+              心事不必流向远方，我的港        
+             口24小时为你靠岸。  
+             ✨ **愿你的咖啡**永远温度        
+            刚好，耳机永远电量满格，那       
+            些没说出口的早安晚安，我会     
+            偷偷存进你窗台的月光银行。  
+             ✨ **愿你的歌单**永远切中     
+             心跳，备忘录永远记满小确幸      
+             ，当你播放第527首时——或许      
+            会发现我藏在歌词里的彩蛋。  
+           ✨ **愿你的书架**常添新书却     
+            不忘旧友（比如我），故事读      
+            到第七章暴雨突降的夜晚，我       
+            的伞永远偏向你左边。  
+           ✨ 愿你的身体像春天的柳枝，     
+           风雨中愈发柔韧舒展；心情如       
+           。夏的冰镇气泡水，轻轻摇晃    
+           就溢出星星点点的欢畅~  
+            ✨ 愿你的疲惫能被晚风揉散         
+             成云，头痛化作融化的冰淇        
+              淋 ，每个细胞都像晒饱太阳      
+              的猫，懒洋洋地打起幸福小呼噜。  
+           ✨ 祝你早餐的鸡蛋永远溏心，       
+           熬夜时枸杞茶刚好温热，若是 
+          雨天关节偷偷抗议——我的按            
+          摩预约随时为你待机！  
+           ✨ 愿你的Wi-Fi永远满格，姨妈           
+           期巧克力自动补货，所有烦心            
+           事像过期酸奶被精准拦截，只            
+           留下益生菌级的轻盈好心情。  
+           ✨ 愿你的颈椎像天鹅颈般优雅           
+           舒展，肩颈酸痛被晨间八段锦            
+           打成蝴蝶结，每晚失眠都败给            
+            薰衣草香和我念的诗。  
+            ✨ 祝你成为自己的中医圣手            
+            眉心郁结用大笑针灸，气血不           
+             足用火锅滋补，而我会偷偷在            
+             你药方里加一味“安心”。  
+              ✨✨✨✨✨✨✨✨
+              希望你能够天天开心
+             ✨✨✨✨✨✨✨✨
+             希望你能够万事顺遂
+             ✨✨✨✨✨✨✨✨
+            希望你17岁生日快乐
+            ✨✨✨✨✨✨✨✨
+            ❤️❤️❤️❤️❤️❤️❤️❤️
+            💖💖💖陈鑫💖💖💖
+            💕💞💓💗💗💓💞💕
+                                                     
+
+        </div>
+    </div>
+    
+    <button class="music-btn" id="musicBtn">🎵 播放音乐</button>
+
+    <script>
+        // ========== 配置区域 ==========
+        const CONFIG = {
+            // 合法音乐源（三选一）：
+            music: "https://music.163.com/song/media/outer/url?id=28403111.mp3",
+            stars: { count: 180, maxSize: 2.5 },
+            scroll: { speed: 50, sensitivity: 0.6 }
+        };
+
+        // ========== 初始化 ==========
+        // 星空生成
+        function createStars() {
+            const container = document.querySelector('.stars');
+            for(let i=0; i<CONFIG.stars.count; i++){
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.cssText = `
+                    width: ${Math.random() * CONFIG.stars.maxSize}px;
+                    height: ${Math.random() * CONFIG.stars.maxSize}px;
+                    left: ${Math.random() * 100}%;
+                    top: ${Math.random() * 100}%;
+                    animation-delay: ${Math.random() * 2}s;
+                    opacity: ${Math.random() * 0.5 + 0.2};
+                `;
+                container.appendChild(star);
+            }
+        }
+
+        // 音乐控制系统
+        const audio = new Audio(CONFIG.music);
+        let isMusicPlaying = false;
+        document.getElementById('musicBtn').addEventListener('click', function() {
+            if (isMusicPlaying) {
+                audio.pause();
+                this.textContent = '🎵 播放音乐';
+            } else {
+                audio.play().catch(() => {
+                    alert('请点击页面任意位置后再次尝试播放');
+                });
+                this.textContent = '⏸ 暂停音乐';
+            }
+            isMusicPlaying = !isMusicPlaying;
+        });
+
+        // 触摸滚动系统
+        let isAnimating = false, lastY = 0, velocity = 0;
+        document.addEventListener('touchstart', e => {
+            lastY = e.touches[0].clientY;
+            document.querySelector('.message-box').style.animationPlayState = 'paused';
+            cancelAnimationFrame(animationFrame);
+        });
+
+        document.addEventListener('touchmove', e => {
+            const deltaY = e.touches[0].clientY - lastY;
+            document.querySelector('.scroll-container').scrollTop -= deltaY * CONFIG.scroll.sensitivity;
+            lastY = e.touches[0].clientY;
+        }, { passive: false });
+
+        document.addEventListener('touchend', () => {
+            isAnimating = true;
+            requestAnimationFrame(animateScroll);
+        });
+
+        function animateScroll() {
+            if (!isAnimating) return;
+            velocity *= 0.93;
+            document.querySelector('.scroll-container').scrollTop += velocity * 16;
+            if (Math.abs(velocity) > 0.1) {
+                requestAnimationFrame(animateScroll);
+            } else {
+                setTimeout(() => {
+                    document.querySelector('.message-box').style.animationPlayState = 'running';
+                }, 2000);
+            }
+        }
+
+        // 启动初始化
+        createStars();
+        document.documentElement.style.setProperty('--scroll-speed', `${CONFIG.scroll.speed}s`);
+    </script>
+</body>
+</html>
